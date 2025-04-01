@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video ve Yazı</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+        .video-container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .overlay-text {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 2.5em;
+            font-weight: bold; /* Yazıyı kalınlaştırır */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+        .sub-text {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 1.5em;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay loop muted>
+            <source src="video_2025-04-01_04-05-28.mp4" type="video/mp4">
+            
+        </video>
+    <div class="overlay-text">Yusuf Afdoc</div>
+    <div class="sub-text">Come Back... </div>
+    </div>
+</body>
+</html>
